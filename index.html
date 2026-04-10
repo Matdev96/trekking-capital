@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Trekking Capital — Assessoria de Investimentos Imobiliários. Metodologia completa de criação e multiplicação de patrimônio para conquistar sua independência financeira." />
+  <meta name="keywords" content="investimentos imobiliários, construção, renda passiva, independência financeira, alavancagem, Indaiatuba" />
+  <meta name="author" content="Trekking Capital" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Trekking Capital — Conquiste sua independência financeira" />
+  <meta property="og:description" content="Metodologia completa de criação e multiplicação de patrimônio imobiliário. Da ideia à venda, com você em cada passo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.trekkingcapital.com.br" />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+
+  <title>Trekking Capital — Independência Financeira com Método</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       SVG SPRITE — Logomarca (reutilizável via <use>)
+  ============================================================ -->
+  <svg style="display:none" aria-hidden="true">
+    <symbol id="logo-icon-white" viewBox="0 0 88 64">
+      <polygon points="4,62 26,10 34,62" fill="#ffffff"/>
+      <polygon points="26,10 46,62 34,62" fill="#ffffff" opacity="0.38"/>
+      <polygon points="38,62 62,4 74,30 64,62" fill="#C9A84C"/>
+      <polygon points="62,4 86,62 74,62 74,30" fill="#ffffff"/>
+      <polygon points="64,62 74,30 79,44 72,62" fill="#ffffff" opacity="0.28"/>
+    </symbol>
+    <symbol id="logo-icon-navy" viewBox="0 0 88 64">
+      <polygon points="4,62 26,10 34,62" fill="#1B2A4A"/>
+      <polygon points="26,10 46,62 34,62" fill="#1B2A4A" opacity="0.42"/>
+      <polygon points="38,62 62,4 74,30 64,62" fill="#C9A84C"/>
+      <polygon points="62,4 86,62 74,62 74,30" fill="#1B2A4A"/>
+      <polygon points="64,62 74,30 79,44 72,62" fill="#1B2A4A" opacity="0.32"/>
+    </symbol>
+  </svg>
+
+  <!-- ============================================================
+       WHATSAPP — Botão flutuante
+  ============================================================ -->
+  <a class="whatsapp-btn" href="#" aria-label="Fale conosco pelo WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
+  <div class="whatsapp-tooltip">Fale conosco no WhatsApp</div>
+
+  <!-- ============================================================
+       NAVEGAÇÃO
+  ============================================================ -->
+  <nav>
+    <a href="#inicio" class="nav-logo">
+      <svg width="44" height="32" viewBox="0 0 88 64" fill="none" aria-hidden="true">
+        <use href="#logo-icon-white"/>
+      </svg>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Trekking</span>
+        <span class="nav-logo-sub">CAPITAL</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#origem">A Origem</a></li>
+      <li><a href="#metodologia">A Metodologia</a></li>
+      <li><a href="#por-que-imoveis">Por que imóveis?</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+    <a href="#contato" class="nav-cta">Quero começar</a>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="inicio">
+    <img
+      class="hero__bg"
+      src="assets/images/hero-house.jpg"
+      alt="Imóvel residencial de alto padrão"
+    />
+    <div class="hero__overlay"></div>
+    <div class="hero__overlay2"></div>
+
+    <div class="hero__inner">
+      <div>
+        <div class="eyebrow">
+          <span class="ey-line"></span>
+          <span class="ey-text">Assessoria de Investimentos Imobiliários</span>
+        </div>
+        <h1 class="hero__title">
+          Conquiste a sua <em>independência financeira.</em>
+        </h1>
+        <p class="hero__desc">
+          Com uma metodologia sólida de criação e multiplicação de patrimônio.
+        </p>
+        <p class="hero__desc">
+          A Trekking é o produto resultante da busca dos seus fundadores por
+          <em>tempo e renda passiva</em> para se dedicarem ao que mais prezam:
+          família, saúde, viagens e natureza. E agora queremos ajudar nossos
+          clientes e parceiros a alcançar o mesmo sucesso.
+        </p>
+        <div class="hero__actions">
+          <a href="#metodologia" class="btn-gold">Conhecer a metodologia</a>
+          <a href="#quem-somos" class="btn-outline-w">Como funciona →</a>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="hero__quote-box">
+          <p class="hero__quote-text">
+            "Investimentos são como o montanhismo — exigem planejamento e foco.
+            Mas quando alcançamos o topo, temos a sensação de paz, de plenitude,
+            visibilidade e conquista. Uma tranquilidade única, como se o tempo
+            parasse para que você possa simplesmente respirar e contemplar."
+          </p>
+          <span class="hero__quote-tag">Os fundadores</span>
+        </div>
+        <div class="hero__vision">
+          <p class="hero__vision-label">Nossa visão</p>
+          <p class="hero__vision-text">
+            Ser a maior referência em investimentos imobiliários e construção
+            de Indaiatuba e região até 2030.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gold-bar"></div>
+
+  <!-- ============================================================
+       GALERIA DE PROJETOS
+  ============================================================ -->
+  <section class="galeria" id="projetos">
+    <div class="container">
+      <div class="eyebrow">
+        <span class="ey-line"></span>
+        <span class="ey-text">Nossos projetos</span>
+      </div>
+      <h2 class="section-title section-title--white">Imóveis que geram patrimônio</h2>
+      <p class="section-sub section-sub--white">
+        Selecionamos e desenvolvemos produtos residenciais de alta liquidez —
+        projetados para valorizar, vender rápido e gerar retorno real.
+      </p>
+
+      <div class="galeria__grid">
+        <div class="gal-item gal-item--tall">
+          <img src="assets/images/project-1.jpg" alt="Residência de alto padrão — alto padrão e alta liquidez" />
+          <div class="gal-item__overlay"></div>
+          <span class="gal-item__label">Alto padrão · Alta liquidez</span>
+        </div>
+        <div class="gal-item">
+          <img src="assets/images/project-2.jpg" alt="Projeto arquitetônico" style="object-position:center 80%" />
+          <div class="gal-item__overlay"></div>
+          <span class="gal-item__label">Projeto arquitetônico</span>
+        </div>
+        <div class="gal-item">
+          <img src="assets/images/project-3.jpg" alt="Acabamento premium" style="object-position:30% center" />
+          <div class="gal-item__overlay"></div>
+          <span class="gal-item__label">Acabamento premium</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ORIGEM
+  ============================================================ -->
+  <section class="origem" id="origem">
+    <div class="container">
+      <div class="eyebrow">
+        <span class="ey-line"></span>
+        <span class="ey-text">A origem do nome</span>
+      </div>
+      <h2 class="section-title section-title--white">
+        Trekking: trilhamos nossos próprios caminhos com propósito
+      </h2>
+      <p class="section-sub section-sub--white">
+        Nossos fundadores queriam mais liberdade para se dedicarem aos seus planos.
+      </p>
+
+      <div class="origem__grid">
+        <div class="origem__text">
+          <p>
+            Somos, antes de tudo, uma metodologia que reúne estratégias específicas
+            de marketing, alavancagem financeira, engenharia e vendas, que quando
+            combinadas <em>potencializam ao máximo o retorno dos nossos clientes.</em>
+          </p>
+          <p>
+            Esse foi o caminho que nos levou à nossa independência e nos garantiu
+            tempo e recursos para aproveitarmos cada momento com intensidade única.
+            Hoje temos o privilégio de nos dedicar a orientar pessoas a buscar a
+            mesma felicidade, e esse propósito é a chave do nosso sucesso.
+          </p>
+          <p>
+            Você não precisa ser um amante da natureza para se identificar com o
+            nosso plano. Independentemente das suas metas e objetivos,
+            <em>a estratégia de independência financeira adequada vai te proporcionar
+            o fôlego necessário para alcançá-los.</em>
+          </p>
+          <p>
+            É essa experiência que queremos proporcionar aos nossos clientes. A
+            busca por algo muito maior do que a nossa rotina.
+            <em>Tempo para você fazer o que quiser.</em>
+          </p>
+        </div>
+
+        <div class="origem__visual">
+          <div class="origem__logo">
+            <svg width="140" height="100" viewBox="0 0 88 64" fill="none" aria-hidden="true">
+              <use href="#logo-icon-white"/>
+            </svg>
+          </div>
+
+          <div class="metaphor-item">
+            <span class="metaphor-item__dot"></span>
+            <div class="metaphor-item__text">
+              <strong>Planejamento</strong>
+              Criamos os produtos estrategicamente, antecipamos cada passo e
+              analisamos diversos cenários para que você invista com segurança.
+            </div>
+          </div>
+          <div class="metaphor-item">
+            <span class="metaphor-item__dot"></span>
+            <div class="metaphor-item__text">
+              <strong>Execução</strong>
+              Nos encarregamos de todas as atividades, trazendo informações claras
+              para que as decisões sejam tomadas de maneira prática e tranquila.
+            </div>
+          </div>
+          <div class="metaphor-item">
+            <span class="metaphor-item__dot"></span>
+            <div class="metaphor-item__text">
+              <strong>A recompensa</strong>
+              As margens dos investimentos imobiliários podem ser excelentes e o
+              risco facilmente calculado. Nosso plano não só constrói, como
+              multiplica o seu patrimônio de maneira segura e previsível.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       QUEM SOMOS
+  ============================================================ -->
+  <section class="quemsomos" id="quem-somos">
+    <div class="container">
+      <div class="eyebrow">
+        <span class="ey-line"></span>
+        <span class="ey-text">Quem somos</span>
+      </div>
+
+      <div class="quemsomos__grid">
+        <div class="quemsomos__text">
+          <h2 class="section-title">Mais do que orientar, nós executamos.</h2>
+          <p>
+            Tipicamente nossos clientes são pessoas que se dedicam a atividades
+            diversas, mas que enxergam nos imóveis uma alternativa segura de
+            investimento buscando renda extra ou passiva. Nosso objetivo não se
+            limita a orientá-los sobre as melhores práticas para otimizar margens
+            nesse mercado, mas <em>efetivamente executar por eles o máximo das
+            tarefas e decisões</em> para que eles não precisem se distrair das
+            suas atividades principais.
+          </p>
+          <p>
+            Criamos e executamos o projeto do zero: começando pela escolha do
+            terreno, estudo de viabilidade, projeto arquitetônico, estratégia
+            financeira, escolha dos fornecedores, acompanhamento da obra e
+            terminando na venda da casa.
+          </p>
+          <p><em>Você não se preocupa com nada. Acompanhamos cada passo com você.</em></p>
+        </div>
+
+        <div class="quemsomos__aside">
+          <div class="qs-card">
+            <h4>Produto + Alavancagem + Agilidade</h4>
+            <p>
+              Nossa fórmula combina o produto certo, alavancagem financeira
+              inteligente e agilidade na construção e venda — gerando a margem
+              ótima em cada projeto.
+            </p>
+          </div>
+          <div class="qs-card">
+            <h4>Patrimônio e renda passiva</h4>
+            <p>
+              Além da construção de casas para venda, criamos projetos específicos
+              de estruturação e multiplicação de patrimônio, que garantirão renda
+              recorrente para dar escalabilidade aos seus investimentos. Após o
+              primeiro ciclo, todo o sistema se retroalimenta — você assiste o seu
+              patrimônio crescer e garante o seu futuro.
+            </p>
+          </div>
+          <div class="qs-vision">
+            <p class="qs-vision__label">Nossa visão — 2030</p>
+            <p>
+              Ser a maior referência em investimentos imobiliários da região,
+              multiplicando histórias de independência financeira.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       METODOLOGIA
+  ============================================================ -->
+  <section class="metodologia" id="metodologia">
+    <div class="container">
+      <div class="eyebrow">
+        <span class="ey-line"></span>
+        <span class="ey-text">A metodologia</span>
+      </div>
+      <h2 class="section-title section-title--white">A fórmula que potencializa margens</h2>
+      <p class="section-sub section-sub--white">
+        Uma estratégia cíclica, lastreada em imóveis, escalável e replicável.
+        Cada etapa foi desenhada para maximizar o retorno e minimizar o risco.
+      </p>
+
+      <div class="formula-box">
+        <span class="formula-item">Produto Certo</span>
+        <span class="formula-op">+</span>
+        <span class="formula-item">Alavancagem Financeira</span>
+        <span class="formula-op">+</span>
+        <span class="formula-item">Agilidade na Construção e na Venda</span>
+        <span class="formula-op">=</span>
+        <span class="formula-result">Margem Ótima</span>
+      </div>
+
+      <div class="method-steps">
+        <div class="method-step">
+          <span class="method-step__num">01</span>
+          <div class="method-step__body">
+            <h4>Estudo de viabilidade</h4>
+            <p>Análise de demanda, escolha do produto ideal, simulação financeira com projeção de cenários diversos — antes de qualquer comprometimento de capital.</p>
+          </div>
+        </div>
+        <div class="method-step">
+          <span class="method-step__num">02</span>
+          <div class="method-step__body">
+            <h4>Produto certo para o mercado certo</h4>
+            <p>Projeto arquitetônico pensado para atender a demanda real. Planta, padrão e precificação alinhados ao que o mercado absorve com velocidade. Estudamos a demanda a fundo para oferecer o que os clientes buscam, levando em consideração a liquidez dos condomínios e o melhor retorno por metro quadrado construído.</p>
+          </div>
+        </div>
+        <div class="method-step">
+          <span class="method-step__num">03</span>
+          <div class="method-step__body">
+            <h4>Alavancagem financeira estratégica</h4>
+            <p>Captação antecipada de recursos para terreno e/ou construção — usando o mínimo de capital próprio e alavancando o resultado.</p>
+          </div>
+        </div>
+        <div class="method-step">
+          <span class="method-step__num">04</span>
+          <div class="method-step__body">
+            <h4>Construção ágil</h4>
+            <p>O método construtivo mais moderno com prazo reduzido. Menos tempo de obra significa menos risco, menos custo e capital liberado mais rápido.</p>
+          </div>
+        </div>
+        <div class="method-step">
+          <span class="method-step__num">05</span>
+          <div class="method-step__body">
+            <h4>Venda estratégica e rápida</h4>
+            <p>Estratégia de precificação e comercialização para liquidez rápida — maximizando a margem e encerrando o ciclo no menor tempo possível.</p>
+          </div>
+        </div>
+        <div class="method-step">
+          <span class="method-step__num">06</span>
+          <div class="method-step__body">
+            <h4>Conversão em renda passiva</h4>
+            <p>Feche o ciclo todo investindo parte do capital gerado em cada operação em imóveis de locação. O fluxo de caixa recorrente multiplicará o seu patrimônio, enquanto te remunera e se retroalimenta — o caminho real para a independência financeira.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       NOSSA PROPOSTA
+  ============================================================ -->
+  <section class="proposta" id="proposta">
+    <div class="container">
+      <div class="eyebrow">
+        <span class="ey-line"></span>
+        <span class="ey-text">Nossa proposta</span>
+      </div>
+      <h2 class="section-title">Da ideia à venda — com você em cada passo</h2>
+
+      <div class="prop-destaque">
+        <p>
+          Usamos uma fórmula simples, mas <em>extremamente poderosa</em>: criamos e
+          executamos o projeto completo — da escolha do terreno à venda da casa —
+          passando pela análise de mercado, projeto arquitetônico, estratégia
+          financeira, escolha de parceiros e fornecedores e acompanhamento de obra.
+          <em>Você não se preocupa com nada.</em>
+        </p>
+      </div>
+
+      <div class="prop-grid">
+        <div class="prop-card">
+          <h3>Gestão completa do projeto</h3>
+          <p>Da escolha do terreno ao projeto arquitetônico, da escolha dos parceiros ao acompanhamento da obra. Um único ponto de contato para tudo.</p>
+        </div>
+        <div class="prop-card">
+          <h3>Estratégia financeira estruturada</h3>
+          <p>Alavancagem inteligente para operar com o mínimo de capital próprio, aumentar o poder de escala e potencializar significativamente as margens.</p>
+        </div>
+        <div class="prop-card">
+          <h3>Seguro, replicável e escalável</h3>
+          <p>Um método testado, com cada etapa documentada — para que você possa crescer com previsibilidade e segurança a cada novo ciclo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       POR QUE IMÓVEIS?
+  ============================================================ -->
+  <section class="risco" id="por-que-imoveis">
+    <div class="container">
+      <div class="eyebrow">
+        <span class="ey-line"></span>
+        <span class="ey-text">Por que imóveis?</span>
+      </div>
+      <h2 class="section-title section-title--white">
+        O investimento mais seguro e previsível que existe
+      </h2>
+      <p class="section-sub section-sub--white">
+        Enquanto o mercado financeiro oscila com fatores externos de curto prazo,
+        o imobiliário tem fundamentos sólidos e uma lógica simples: a população
+        cresce, e pessoas sempre precisarão de moradia.
+      </p>
+
+      <div class="risco__grid">
+        <div class="risco-card">
+          <div class="risco-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3>Demanda estrutural e permanente</h3>
+          <p>A população cresce continuamente. Com ela, cresce a necessidade por moradia — seja para compra ou locação. Esse é um mercado que não desaparece, independentemente do cenário econômico.</p>
+        </div>
+        <div class="risco-card">
+          <div class="risco-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="20" x2="18" y2="10"/>
+              <line x1="12" y1="20" x2="12" y2="4"/>
+              <line x1="6" y1="20" x2="6" y2="14"/>
+            </svg>
+          </div>
+          <h3>Projeções mais concretas que o mercado financeiro</h3>
+          <p>Ações e fundos estão sujeitos a volatilidade global, crises políticas e fatores de curtíssimo prazo. O imóvel tem valor tangível, localizável e calculável — você vê, toca e projeta com muito mais precisão.</p>
+        </div>
+        <div class="risco-card">
+          <div class="risco-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="5" width="20" height="14" rx="2"/>
+              <line x1="2" y1="10" x2="22" y2="10"/>
+            </svg>
+          </div>
+          <h3>Receita previsível e recorrente</h3>
+          <p>Imóveis de locação geram renda mensal estável e previsível. Diferente de dividendos ou rendimentos variáveis, o aluguel é um contrato — você sabe o que vai receber e quando.</p>
+        </div>
+        <div class="risco-card">
+          <div class="risco-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+              <polyline points="17 6 23 6 23 12"/>
+            </svg>
+          </div>
+          <h3>Alavancagem que multiplica retornos</h3>
+          <p>Ao contrário da maioria dos investimentos, o imobiliário permite alavancar com capital de terceiros — operando com pouco capital próprio e multiplicando o retorno sobre o que foi investido.</p>
+        </div>
+      </div>
+
+      <div class="risco-destaque">
+        <div class="risco-destaque__icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Transparência e controle total nas suas mãos</h3>
+          <p>
+            A Trekking Capital <em>indica parceiros e fornecedores, orienta e coordena</em>
+            cada passo — mas nunca toca no seu dinheiro. Você faz todos os pagamentos
+            diretamente, mantendo <em>controle financeiro absoluto</em> da operação
+            em todo momento.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXEMPLO PRÁTICO
+  ============================================================ -->
+  <section class="resultado" id="resultado">
+    <div class="container">
+      <div class="eyebrow">
+        <span class="ey-line"></span>
+        <span class="ey-text">Exemplo prático</span>
+      </div>
+      <h2 class="section-title">A diferença que a estratégia faz</h2>
+      <p class="section-sub">
+        A mesma obra, com e sem a metodologia Trekking. O que muda é a
+        inteligência financeira aplicada em cada etapa.
+      </p>
+
+      <div class="res-grid">
+        <div class="res-card res-card--sem">
+          <span class="res-badge">Sem metodologia</span>
+          <h3>Abordagem tradicional</h3>
+          <div class="res-row"><span>Capital próprio aportado</span><span>Alto</span></div>
+          <div class="res-row"><span>Resultado obtido</span><span>Limitado</span></div>
+          <div class="res-row"><span>Duração do ciclo</span><span>12–18 meses</span></div>
+          <div class="res-row"><span>Estratégia de venda</span><span>Sem suporte</span></div>
+          <p class="res-highlight">Margem comprimida, capital imobilizado e ciclos longos.</p>
+        </div>
+
+        <div class="res-card res-card--com">
+          <span class="res-badge">Com a metodologia Trekking</span>
+          <h3>Com alavancagem estratégica</h3>
+          <div class="res-row"><span>Capital próprio aportado</span><span>Significativamente menor</span></div>
+          <div class="res-row"><span>Resultado obtido</span><span>Significativamente maior</span></div>
+          <div class="res-row"><span>Duração do ciclo</span><span>6–12 meses</span></div>
+          <div class="res-row"><span>Estratégia de venda</span><span>Estruturada e ágil</span></div>
+          <p class="res-highlight">Margens potencializadas, capital eficiente e ciclos curtos — prontos para reinvestir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       INDEPENDÊNCIA FINANCEIRA
+  ============================================================ -->
+  <section class="independencia" id="independencia">
+    <div class="container">
+      <div class="eyebrow">
+        <span class="ey-line"></span>
+        <span class="ey-text">O objetivo final</span>
+      </div>
+      <h2 class="section-title">Independência financeira real</h2>
+      <p class="section-sub">
+        Cada projeto é um passo na sua jornada. Ciclo a ciclo, você constrói
+        liberdade financeira de verdade — e chega ao seu topo.
+      </p>
+
+      <div class="ind-hero">
+        <img src="assets/images/hero-house.jpg" alt="Imóvel residencial premium" />
+        <div class="ind-hero__overlay"></div>
+        <div class="ind-hero__content">
+          <blockquote>
+            <p>
+              "Quando estamos no topo, temos a sensação de paz, de visibilidade,
+              de conquista. A sensação de que o tempo pode ficar parado."
+            </p>
+            <cite>A filosofia Trekking Capital</cite>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="ind-grid">
+        <div class="ind-card">
+          <span class="ind-card__num">01</span>
+          <h4>Patrimônio que trabalha por você</h4>
+          <p>Converta lucros de construção em imóveis de renda — ativos que geram caixa mensalmente, sem depender do seu tempo. Nós também orientamos nossos clientes a investir nos produtos para locação certos, de acordo com a demanda da cidade. Os próprios imóveis se pagam e multiplicam o seu patrimônio exponencialmente — basta estratégia para começar e a orientação certa.</p>
+        </div>
+        <div class="ind-card">
+          <span class="ind-card__num">02</span>
+          <h4>Escalabilidade com segurança</h4>
+          <p>Alavancagem controlada para crescer o portfólio com capital eficiente — sem comprometer seu patrimônio a cada ciclo.</p>
+        </div>
+        <div class="ind-card">
+          <span class="ind-card__num">03</span>
+          <h4>Ciclos curtos, liberdade mais rápida</h4>
+          <p>Com ciclos de 6 a 12 meses, o retorno é reinvestido rapidamente — acelerando o caminho até a renda passiva consistente.</p>
+        </div>
+        <div class="ind-card">
+          <span class="ind-card__num">04</span>
+          <h4>Método, não sorte</h4>
+          <p>Cada decisão é orientada por estratégia, dados e experiência de mercado — garantindo previsibilidade e resultado recorrente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ
+  ============================================================ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="eyebrow">
+        <span class="ey-line"></span>
+        <span class="ey-text">Perguntas frequentes</span>
+      </div>
+      <h2 class="section-title section-title--white">Tire suas dúvidas</h2>
+      <p class="section-sub section-sub--white">
+        Respondemos as perguntas mais comuns de quem está começando a jornada.
+      </p>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Preciso ter experiência em construção para investir com a Trekking Capital?</span>
+            <div class="faq-arrow" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 3.5L5 6.5L8 3.5" stroke="rgba(201,168,76,0.8)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <p>Não. Esse é exatamente o nosso diferencial. Cuidamos de toda a gestão técnica, arquitetônica e de obra por você. Nossos clientes geralmente são profissionais de outras áreas que enxergam no imobiliário uma oportunidade de investimento — sem precisar se tornar especialistas em construção.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Qual o capital mínimo para começar?</span>
+            <div class="faq-arrow" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 3.5L5 6.5L8 3.5" stroke="rgba(201,168,76,0.8)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <p>O capital necessário varia de acordo com o projeto e a estratégia de alavancagem aplicada. Graças ao nosso modelo financeiro, é possível iniciar com uma fração do custo total da obra. Agende uma conversa conosco e faremos uma simulação personalizada para o seu perfil.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Como funciona a alavancagem financeira na prática?</span>
+            <div class="faq-arrow" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 3.5L5 6.5L8 3.5" stroke="rgba(201,168,76,0.8)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <p>Captamos recursos de terceiros antecipadamente — para financiar o terreno e/ou a construção — utilizando o próprio imóvel como garantia. Isso permite que você entre no projeto com muito menos capital próprio e amplie o retorno sobre o que investiu. A quitação acontece com desconto na venda do imóvel.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>O meu dinheiro passa pela Trekking Capital?</span>
+            <div class="faq-arrow" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 3.5L5 6.5L8 3.5" stroke="rgba(201,168,76,0.8)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <p>Nunca. A Trekking Capital indica os melhores fornecedores e profissionais para cada etapa, mas todos os pagamentos são feitos diretamente por você. Você mantém controle financeiro absoluto da operação do início ao fim.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quanto tempo leva um ciclo completo do investimento?</span>
+            <div class="faq-arrow" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 3.5L5 6.5L8 3.5" stroke="rgba(201,168,76,0.8)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </button>
+          <div class="faq-answer">
+            <p>Um ciclo completo — da escolha do terreno à venda da casa — leva em média de 6 a 12 meses, dependendo do projeto. Utilizamos métodos construtivos modernos que reduzem significativamente o prazo de obra, liberando o capital mais rápido para o próximo investimento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTATO
+  ============================================================ -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="eyebrow">
+        <span class="ey-line"></span>
+        <span class="ey-text">Fale conosco</span>
+      </div>
+      <h2 class="section-title">Pronto para dar o primeiro passo?</h2>
+      <p class="section-sub">
+        Estamos ansiosos para explicar o passo a passo utilizado para potencializar
+        o retorno do seu investimento de maneira segura, replicável e escalável —
+        e apresentar as próximas fases da nossa metodologia completa.
+      </p>
+
+      <div class="contato-grid">
+        <div class="contato-card">
+          <h4>Carlos Henrique Leão (Cal)</h4>
+          <p class="role">Diretor Administrativo</p>
+          <div class="contato-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6B7A99" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.95-.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(019) 99690-1008</span>
+          </div>
+          <div class="contato-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6B7A99" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>cal@trekkingcapital.com.br</span>
+          </div>
+        </div>
+
+        <div class="contato-card">
+          <h4>Cíntia Ocanha</h4>
+          <p class="role">Diretora Comercial</p>
+          <div class="contato-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6B7A99" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.95-.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(011) 99621-0179</span>
+          </div>
+          <div class="contato-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6B7A99" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>cintia@trekkingcapital.com.br</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA FINAL
+  ============================================================ -->
+  <section class="cta-final">
+    <p class="cta-tagline">Crescimento com método</p>
+    <h2>Comece sua jornada.<br><em>O topo te espera.</em></h2>
+    <p>Trilhe a sua independência financeira conosco.</p>
+    <a href="#contato" class="btn-gold">Agendar uma conversa ↗</a>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <div class="footer-logo">
+      <svg width="36" height="26" viewBox="0 0 88 64" fill="none" aria-hidden="true">
+        <use href="#logo-icon-white"/>
+      </svg>
+      <div style="display:flex;flex-direction:column;line-height:1">
+        <span class="footer-logo-name">Trekking</span>
+        <span class="footer-logo-sub">CAPITAL</span>
+      </div>
+    </div>
+    <span>© 2025 Trekking Capital · Metodologia de Investimentos Imobiliários</span>
+    <span>Indaiatuba, SP</span>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/main.js"></script>
+</body>
+</html>
