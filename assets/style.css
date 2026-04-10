@@ -151,9 +151,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(17, 29, 51, 0.97);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: #111d33;
   padding: 14px 32px;
   display: flex;
   justify-content: space-between;
