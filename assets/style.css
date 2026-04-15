@@ -540,7 +540,7 @@ nav {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: 64px;
-  align-items: center;
+  align-items: start;
 }
 
 .quemsomos__text p {
