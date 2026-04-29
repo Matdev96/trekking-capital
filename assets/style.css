@@ -493,11 +493,6 @@ nav {
   gap: 22px;
 }
 
-.origem__logo {
-  text-align: center;
-  margin-bottom: 8px;
-}
-
 .metaphor-item {
   display: flex;
   align-items: flex-start;
@@ -1188,18 +1183,49 @@ nav {
   background: var(--off-white);
 }
 
+.contato-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.contato-foto img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid rgba(201,168,76,0.35);
+  object-fit: cover;
+  display: block;
+}
+
+.contato-foto__legenda {
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.contato-conteudo .section-title {
+  margin-top: 12px;
+}
+
 .contato-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-top: 44px;
+  gap: 16px;
+  margin-top: 32px;
 }
 
 .contato-card {
   background: var(--white);
   border: 1px solid #DDD9CC;
   border-radius: 4px;
-  padding: 32px;
+  padding: 24px;
   position: relative;
   overflow: hidden;
 }
@@ -1435,6 +1461,7 @@ footer {
   .ind-hero__content { padding: 0 24px; }
   .ind-hero__content blockquote p { font-size: 15px; }
 
+  .contato-layout { grid-template-columns: 1fr; gap: 40px; }
   .contato-grid { grid-template-columns: 1fr; }
 
   .cta-final { padding: 72px 20px; }
