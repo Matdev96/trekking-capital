@@ -57,7 +57,7 @@
 <section class="hero" id="hero" style="background: linear-gradient(rgba(21,37,67,0.72), rgba(21,37,67,0.72)), url('https://www.trekkingcapital.com.br/assets/images/trekking_trilho.png') center/cover no-repeat;">
   <div class="container">
     <div class="hero-content">
-      <span class="hero-label">Assessoria em Investimentos Imobiliários</span>
+      <span class="hero-label">Assessoria e consultoria em Construção</span>
       <h1>Trilhe a sua<br><em>Independência Financeira</em><br>conosco.</h1>
       <p>Somos uma consultoria e assessoria especializada em construção de imóveis para venda ou locação. Criamos estratégias específicas para maximizar o retorno dos nossos clientes — da concepção do projeto à estratégia comercial.</p>
       <a class="hero-cta" href="#contato">Quero começar</a>
@@ -65,24 +65,135 @@
   </div>
 </section>
 
-<!-- FOTOS DOS PROJETOS -->
-<section class="projects">
-  <div class="container">
-    <h2>Referências de projeto</h2>
-    <div class="photo-grid">
-      <div>
-        <img src="https://www.trekkingcapital.com.br/assets/images/project-1-trekking.jpg" alt="Alto padrão" />
-        <p class="photo-caption">Alto padrão · Alta liquidez</p>
-      </div>
-      <div>
-        <img src="https://www.trekkingcapital.com.br/assets/images/project-2-trekking.jpg" alt="Projeto arquitetônico" />
-        <p class="photo-caption">Projeto arquitetônico</p>
-      </div>
-      <div>
-        <img src="https://www.trekkingcapital.com.br/assets/images/project-3.jpg" alt="Acabamento premium" />
-        <p class="photo-caption">Acabamento premium</p>
+<!-- O DIAGNÓSTICO HONESTO -->
+<style>
+  .pain { background: #152543 !important; padding: 88px 40px 80px !important; position: relative !important; overflow: hidden !important; }
+  .pain::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(-52deg,transparent 0,transparent 48px,rgba(179,151,93,.03) 48px,rgba(179,151,93,.03) 49px); pointer-events: none; }
+  .pain-inner { max-width: 1100px !important; margin: 0 auto !important; position: relative !important; }
+  .intro-row { margin-bottom: 56px !important; }
+  .eyebrow { display: flex !important; align-items: center !important; gap: 12px !important; margin-bottom: 20px !important; }
+  .eyebrow-bar { width: 28px !important; height: 2px !important; background: #b3975d !important; flex-shrink: 0 !important; }
+  .eyebrow-text { font-size: 10.5px !important; font-weight: 700 !important; letter-spacing: .2em !important; text-transform: uppercase !important; color: #b3975d !important; }
+  .headline { font-size: clamp(22px, 2.8vw, 36px) !important; font-weight: 800 !important; color: #fff !important; line-height: 1.22 !important; margin-bottom: 16px !important; }
+  .headline em { font-style: normal !important; color: #b3975d !important; }
+  .intro-lead { font-size: 15px !important; font-weight: 500 !important; color: rgba(255,255,255,.72) !important; line-height: 1.72 !important; margin-bottom: 12px !important; }
+  .intro-bridge { font-size: 13px !important; color: rgba(255,255,255,.38) !important; line-height: 1.72 !important; }
+  .cols { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; border: 1px solid rgba(179,151,93,.2) !important; align-items: start !important; }
+  .col { border-right: 1px solid rgba(179,151,93,.2) !important; display: flex !important; flex-direction: column !important; }
+  .col:last-child { border-right: none !important; }
+  .col-photo { width: 100% !important; height: 180px !important; object-fit: cover !important; display: block !important; filter: brightness(.78) saturate(.85) !important; transition: filter .4s !important; }
+  .col-head { padding: 20px 24px 18px !important; border-bottom: 1px solid rgba(179,151,93,.2) !important; border-top: 1px solid rgba(179,151,93,.2) !important; display: flex !important; align-items: flex-start !important; gap: 12px !important; background: rgba(179,151,93,.05) !important; }
+  .col-head-icon { width: 32px !important; height: 32px !important; flex-shrink: 0 !important; background: rgba(179,151,93,.12) !important; border: 1px solid rgba(179,151,93,.22) !important; border-radius: 4px !important; display: flex !important; align-items: center !important; justify-content: center !important; }
+  .col-phase { font-size: 9.5px !important; font-weight: 700 !important; letter-spacing: .18em !important; text-transform: uppercase !important; color: #b3975d !important; display: block !important; margin-bottom: 3px !important; }
+  .col-title { font-size: 14.5px !important; font-weight: 800 !important; color: #fff !important; line-height: 1.25 !important; display: block !important; }
+  .pain-list { padding: 4px 0 16px !important; }
+  .pain-item { display: flex !important; align-items: baseline !important; gap: 11px !important; padding: 11px 24px !important; border-bottom: 1px solid rgba(255,255,255,.045) !important; }
+  .pain-item:last-child { border-bottom: none !important; }
+  .pain-dot { width: 4px !important; height: 4px !important; border-radius: 50% !important; background: #b3975d !important; opacity: .45 !important; flex-shrink: 0 !important; position: relative !important; top: 4px !important; }
+  .pain-text { font-size: 12.5px !important; font-weight: 400 !important; color: rgba(255,255,255,.56) !important; line-height: 1.58 !important; }
+  .pain-text strong { font-weight: 700 !important; color: rgba(255,255,255,.82) !important; }
+  .pivot { margin-top: 56px !important; padding: 36px 40px !important; border: 1px solid rgba(179,151,93,.2) !important; background: rgba(179,151,93,.04) !important; display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 32px !important; }
+  .pivot-left { display: flex !important; flex-direction: column !important; gap: 10px !important; }
+  .pivot-quote { font-size: clamp(15px, 1.7vw, 19px) !important; font-weight: 700 !important; color: #fff !important; line-height: 1.45 !important; }
+  .pivot-body { font-size: 13px !important; color: rgba(255,255,255,.46) !important; line-height: 1.72 !important; max-width: 580px !important; }
+  .pivot-cta { flex-shrink: 0 !important; display: inline-flex !important; align-items: center !important; gap: 10px !important; background: #b3975d !important; color: #152543 !important; font-family: 'Montserrat', sans-serif !important; font-size: 11px !important; font-weight: 700 !important; letter-spacing: .1em !important; text-transform: uppercase !important; padding: 14px 24px !important; text-decoration: none !important; white-space: nowrap !important; }
+  @media (max-width: 760px) {
+    .cols { grid-template-columns: 1fr !important; }
+    .col { border-right: none !important; border-bottom: 1px solid rgba(179,151,93,.2) !important; }
+    .col:last-child { border-bottom: none !important; }
+    .col-photo { height: 200px !important; }
+    .pivot { flex-direction: column !important; align-items: flex-start !important; padding: 28px 24px !important; }
+    .pain { padding: 60px 20px 56px !important; }
+  }
+</style>
+<section class="pain" id="diagnostico">
+  <div class="pain-inner">
+
+    <div class="intro-row">
+      <div class="intro-left">
+        <div class="eyebrow">
+          <div class="eyebrow-bar"></div>
+          <span class="eyebrow-text">O diagnóstico honesto</span>
+        </div>
+        <h2 class="headline">
+          Construir para vender é um<br>
+          <em>investimento rentável e muito seguro.</em>
+        </h2>
+        <p class="intro-lead">
+          Basta saber responder com clareza as perguntas certas.
+        </p>
+        <p class="intro-bridge">
+          Cada etapa do projeto carrega decisões que, sem método, se transformam em custo, prazo e margem perdidos.
+        </p>
       </div>
     </div>
+
+    <div class="cols">
+
+      <div class="col">
+        <img class="col-photo" src="assets/images/analise_financeira.jpg" alt="Análise financeira — planejamento">
+        <div class="col-head">
+          <div class="col-head-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.2" stroke="#b3975d" stroke-width="1.4"/><circle cx="8" cy="8" r="2.8" stroke="#b3975d" stroke-width="1.2"/><line x1="8" y1="1.8" x2="8" y2="5.2" stroke="#b3975d" stroke-width="1.2" stroke-linecap="round"/><line x1="8" y1="10.8" x2="8" y2="14.2" stroke="#b3975d" stroke-width="1.2" stroke-linecap="round"/><line x1="1.8" y1="8" x2="5.2" y2="8" stroke="#b3975d" stroke-width="1.2" stroke-linecap="round"/><line x1="10.8" y1="8" x2="14.2" y2="8" stroke="#b3975d" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+          <div><span class="col-phase">Planejamento Inicial</span><span class="col-title">Estratégia de produto</span></div>
+        </div>
+        <div class="pain-list">
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Tipologia:</strong> térrea ou sobrado?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Metragem:</strong> qual o tamanho ideal?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Planta:</strong> quais as características mais importantes para o cliente final?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Condomínio:</strong> onde devo construir e quanto posso gastar?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Terreno:</strong> topografia, posição, medidas — como tudo isso impacta no meu bolso?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Concorrência:</strong> como me posiciono frente a ela?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Viabilidade:</strong> como prever os cenários e ter clareza do que posso e não posso fazer?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Orçamento:</strong> impostos, cartório, fretes, aditivos — que devo considerar e quando vou pagar cada custo?</span></div>
+        </div>
+      </div>
+
+      <div class="col">
+        <img class="col-photo" src="assets/images/Terraplanagem(1).png" alt="Execução da obra">
+        <div class="col-head">
+          <div class="col-head-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="5" width="12" height="9.5" rx="1.4" stroke="#b3975d" stroke-width="1.4" fill="none"/><path d="M5.5 5V3.2C5.5 2.54 6.04 2 6.7 2h2.6C9.96 2 10.5 2.54 10.5 3.2V5" stroke="#b3975d" stroke-width="1.3" stroke-linecap="round" fill="none"/><path d="M2 9h3.8M10.2 9H14" stroke="#b3975d" stroke-width="1.2" stroke-linecap="round"/><rect x="5.8" y="7.9" width="4.4" height="2.2" rx="1.1" stroke="#b3975d" stroke-width="1.2" fill="none"/></svg>
+          </div>
+          <div><span class="col-phase">Fase 02</span><span class="col-title">Execução da obra</span></div>
+        </div>
+        <div class="pain-list">
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Quem vai construir:</strong> como encontrar a equipe adequada?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Tempo:</strong> como estipular um cronograma real e quanto preciso me dedicar à obra na prática?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Contrato:</strong> quais os tipos de contrato e como me resguardo de passivos trabalhistas?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Confiança:</strong> como verificar a idoneidade e o histórico de quem vou contratar?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Custo:</strong> quanto vai custar de verdade? Quais as estratégias de redução por empreitada e como evitar o estouro de orçamento?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Pagamento:</strong> como estruturar o fluxo sem comprometer o caixa?</span></div>
+        </div>
+      </div>
+
+      <div class="col">
+        <img class="col-photo" src="assets/images/assinatura_contrato.png" alt="Assinatura de contrato">
+        <div class="col-head">
+          <div class="col-head-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 12L6 7.5 9.5 11 15 5" stroke="#b3975d" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.5 5H15V7.5" stroke="#b3975d" stroke-width="1.4" stroke-linecap="round"/><line x1="2" y1="14" x2="15" y2="14" stroke="#b3975d" stroke-width="1.1" stroke-linecap="round" opacity=".38"/></svg>
+          </div>
+          <div><span class="col-phase">Fase 03</span><span class="col-title">Estratégia de venda</span></div>
+        </div>
+        <div class="pain-list">
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Diferenciais:</strong> mobília, marcenaria, paisagismo, tecnologia — o que é custo e o que é ferramenta de vendas?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Força de vendas:</strong> quantas e quais imobiliárias devo envolver? Como me certifico de que os corretores estão se dedicando à venda?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Prazo:</strong> vou conseguir vender no tempo previsto?</span></div>
+          <div class="pain-item"><div class="pain-dot"></div><span class="pain-text"><strong>Valor:</strong> como obter o maior lucro possível sem prejudicar a liquidez?</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pivot">
+      <div class="pivot-left">
+        <p class="pivot-quote">Essas são algumas das dúvidas mais frequentes de quem está construindo sem uma metodologia própria.</p>
+        <p class="pivot-body">Se você ficou em dúvida com uma ou mais, converse conosco — podemos demonstrar como tomar cada uma dessas decisões com clareza e previsibilidade.</p>
+      </div>
+      <a href="#contato" class="pivot-cta">Conversar com a equipe <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1 6.5H12M7.5 2L12 6.5L7.5 11" stroke="#152543" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+
   </div>
 </section>
 
@@ -211,7 +322,7 @@
     <div class="produtos-grid">
 
       <div class="produto-card">
-        <img class="produto-card-img" src="assets/images/sprint_casa_azul.png" alt="Sprint — Médio Padrão" />
+        <img class="produto-card-img" src="assets/images/signature_casa_pedra.png" alt="Sprint — Médio Padrão" />
         <div class="produto-card-body">
           <div class="produto-linha">Sprint</div>
           <div class="produto-padrao">Médio Padrão</div>
@@ -241,7 +352,7 @@
       </div>
 
       <div class="produto-card">
-        <img class="produto-card-img" src="assets/images/signature_casa_pedra.png" alt="Signature — Alto Padrão Exclusivo" />
+        <img class="produto-card-img" src="assets/images/sprint_casa_azul.png" alt="Signature — Alto Padrão Exclusivo" />
         <div class="produto-card-body">
           <div class="produto-linha">Signature</div>
           <div class="produto-padrao">Alto Padrão Exclusivo</div>
@@ -272,14 +383,15 @@
 <section class="galeria-section">
   <div class="galeria-grid">
     <div class="galeria-item" style="position:relative;overflow:hidden;height:380px;">
-      <img src="assets/images/patio_mesa.png" alt="Pátio interno alto padrão"
-        style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s;" 
+      <img src="assets/images/varanda.png" alt="Varanda com tijolinho"
+        style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s;"
         onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
       <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 24px;background:linear-gradient(transparent,rgba(21,37,67,.75));">
-        <p style="margin:0;font-size:13px;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.08em;text-transform:uppercase;">Área externa</p>
-        <p style="margin:4px 0 0;font-size:16px;font-weight:800;color:#fff;">Signature · Alto Padrão Exclusivo</p>
+        <p style="margin:0;font-size:13px;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.08em;text-transform:uppercase;">Varanda</p>
+        <p style="margin:4px 0 0;font-size:16px;font-weight:800;color:#fff;">Sprint · Médio Padrão</p>
       </div>
     </div>
+    
     <div class="galeria-item" style="position:relative;overflow:hidden;height:380px;">
       <img src="assets/images/image_extra.png" alt="Jardim interno com pedras"
         style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s;"
@@ -289,13 +401,14 @@
         <p style="margin:4px 0 0;font-size:16px;font-weight:800;color:#fff;">Altitude · Alto Padrão</p>
       </div>
     </div>
+    
     <div class="galeria-item" style="position:relative;overflow:hidden;height:380px;">
-      <img src="assets/images/varanda.png" alt="Varanda com tijolinho"
-        style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s;"
+      <img src="assets/images/patio_mesa.png" alt="Pátio interno alto padrão"
+        style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s;" 
         onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
       <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 24px;background:linear-gradient(transparent,rgba(21,37,67,.75));">
-        <p style="margin:0;font-size:13px;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.08em;text-transform:uppercase;">Varanda</p>
-        <p style="margin:4px 0 0;font-size:16px;font-weight:800;color:#fff;">Sprint · Médio Padrão</p>
+        <p style="margin:0;font-size:13px;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.08em;text-transform:uppercase;">Área externa</p>
+        <p style="margin:4px 0 0;font-size:16px;font-weight:800;color:#fff;">Signature · Alto Padrão Exclusivo</p>
       </div>
     </div>
   </div>
@@ -477,6 +590,37 @@
   <img src="assets/images/logo-image-blue.jpeg" alt="Trekking Capital" />
   <p>© 2025 Trekking Capital · Metodologia de Investimentos Imobiliários · Indaiatuba, SP</p>
 </footer>
+
+<!-- WHATSAPP FLUTUANTE -->
+<style>
+  .whatsapp-float {
+    display: flex !important; align-items: center !important; justify-content: center !important;
+    position: fixed !important; bottom: 28px !important; right: 28px !important; z-index: 9999 !important;
+    background: #25d366 !important; color: #fff !important;
+    width: 56px !important; height: 56px !important; border-radius: 50% !important;
+    box-shadow: 0 4px 20px rgba(37,211,102,.45) !important;
+    transition: transform .2s, box-shadow .2s;
+    text-decoration: none !important;
+  }
+  .whatsapp-float svg { width: 28px !important; height: 28px !important; }
+  @media (max-width: 768px) {
+    .whatsapp-float {
+      display: flex !important; position: fixed !important;
+      width: 50px !important; height: 50px !important;
+      bottom: 20px !important; right: 16px !important;
+    }
+    .whatsapp-float svg { width: 24px !important; height: 24px !important; }
+  }
+</style>
+<a class="whatsapp-float"
+   href="https://api.whatsapp.com/send/?phone=5519996901008&amp;text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Trekking%20Capital...&amp;type=phone_number&amp;app_absent=0"
+   target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 3C9.925 3 5 7.925 5 14c0 2.18.633 4.21 1.725 5.916L5 29l9.297-1.697A10.94 10.94 0 0 0 16 27.5C22.075 27.5 27 22.575 27 16.5S22.075 3 16 3Z" fill="#fff" opacity=".15"/>
+    <path d="M16 2C9.373 2 4 7.373 4 14c0 2.385.693 4.61 1.89 6.484L4 28l7.724-2.025A11.94 11.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 2 16 2Z" stroke="#fff" stroke-width="1.5"/>
+    <path d="M11.5 10.5c.2-.5.7-.5 1-.5h.5c.3 0 .7.2.8.5l1 2.5c.1.3 0 .7-.2 1l-.8.8c.6 1.2 1.7 2.3 2.9 2.9l.8-.8c.3-.3.7-.3 1-.2l2.5 1c.3.1.5.5.5.8v.5c0 .8-.7 1.5-1.5 1.5C14.5 21 11 17.5 11 13c0-.8.3-1.8.5-2.5Z" fill="#fff"/>
+  </svg>
+</a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="js/grafico.js"></script>
