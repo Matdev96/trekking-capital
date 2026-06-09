@@ -138,40 +138,6 @@
     .modal-ideal { margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.15); font-size: 12px; font-weight: 700; color: rgba(255,255,255,.45); letter-spacing: .04em; }
     .modal-assessoria .modal-ideal { color: rgba(255,255,255,.7); }
 
-    /* METODOLOGIA */
-    .metodologia { background: var(--blue); }
-    .metodologia .section-title { color: var(--white); }
-    .metodologia .section-sub { color: rgba(255,255,255,.65); }
-    .formula {
-      display: flex; align-items: center; justify-content: center; gap: 14px;
-      flex-wrap: wrap; margin: 48px 0;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.15);
-      border-radius: 8px;
-      padding: 28px 40px;
-    }
-    .formula-item {
-      font-size: 16px; font-weight: 800;
-      color: var(--white); padding: 12px 24px;
-      border: 2px solid rgba(255,255,255,.35);
-      border-radius: 6px;
-      letter-spacing: .02em;
-      background: rgba(255,255,255,.05);
-    }
-    .formula-op { color: var(--gold); font-size: 28px; font-weight: 800; line-height: 1; }
-    .formula-result {
-      background: var(--gold); color: var(--white);
-      padding: 14px 28px; border-radius: 6px;
-      font-size: 17px; font-weight: 800;
-      letter-spacing: .03em;
-      box-shadow: 0 4px 20px rgba(179,151,93,.4);
-    }
-    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 48px; }
-    .step { border-top: 2px solid var(--gold); padding-top: 20px; }
-    .step-num { font-size: 11px; font-weight: 700; color: var(--gold); letter-spacing: .1em; margin-bottom: 10px; }
-    .step h4 { font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
-    .step p { font-size: 13px; color: rgba(255,255,255,.6); line-height: 1.6; }
-
     /* PRODUTOS */
     .produtos { background: var(--gray); }
     .produtos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; align-items: start; }
@@ -347,7 +313,7 @@
       .nav-hamburger { display: flex; }
       section { padding: 64px 20px; }
       .origem-grid, .comp-grid { grid-template-columns: 1fr; }
-      .steps, .produtos-grid, .modalidades-grid { grid-template-columns: 1fr; }
+      .produtos-grid, .modalidades-grid { grid-template-columns: 1fr; }
       .razoes { grid-template-columns: 1fr; }
       .photo-grid { grid-template-columns: 1fr; }
       .galeria-grid { grid-template-columns: 1fr; }
@@ -355,133 +321,3 @@
       footer { flex-direction: column; gap: 12px; text-align: center; }
     }
 
-    /* ═══════════════════════════════════════════
-       SEÇÃO DE DORES — O Diagnóstico Honesto
-    ═══════════════════════════════════════════ */
-
-    .pain {
-      background: #152543;
-      padding: 88px 40px 80px;
-      position: relative; overflow: hidden;
-    }
-    .pain::before {
-      content: ''; position: absolute; inset: 0;
-      background: repeating-linear-gradient(-52deg,transparent 0,transparent 48px,rgba(179,151,93,.03) 48px,rgba(179,151,93,.03) 49px);
-      pointer-events: none;
-    }
-    .pain-inner { max-width: 1100px; margin: 0 auto; position: relative; }
-
-    .intro-row { margin-bottom: 56px; }
-
-    .eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
-    .eyebrow-bar { width: 28px; height: 2px; background: #b3975d; flex-shrink: 0; }
-    .eyebrow-text { font-size: 10.5px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: #b3975d; }
-
-    .headline {
-      font-size: clamp(22px, 2.8vw, 36px); font-weight: 800;
-      color: #fff; line-height: 1.22; margin-bottom: 16px;
-    }
-    .headline em { font-style: normal; color: #b3975d; }
-
-    .intro-lead {
-      font-size: 15px; font-weight: 500; color: rgba(255,255,255,.72);
-      line-height: 1.72; margin-bottom: 12px;
-    }
-
-    .intro-bridge {
-      font-size: 13px; color: rgba(255,255,255,.38);
-      line-height: 1.72;
-    }
-
-    .cols {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      border: 1px solid rgba(179,151,93,.2);
-      align-items: start;
-    }
-
-    
-    .col {
-      border-right: 1px solid rgba(179,151,93,.2);
-      display: flex; flex-direction: column;
-    }
-    .col:last-child { border-right: none; }
-
-    .col-photo {
-      width: 100%; height: 180px; object-fit: cover; display: block;
-      filter: brightness(.78) saturate(.85);
-      transition: filter .4s;
-    }
-    .col:hover .col-photo { filter: brightness(.88) saturate(.95); }
-
-    .col-head {
-      padding: 20px 24px 18px;
-      border-bottom: 1px solid rgba(179,151,93,.2);
-      border-top: 1px solid rgba(179,151,93,.2);
-      display: flex; align-items: flex-start; gap: 12px;
-      background: rgba(179,151,93,.05);
-    }
-    .col-head-icon {
-      width: 32px; height: 32px; flex-shrink: 0;
-      background: rgba(179,151,93,.12); border: 1px solid rgba(179,151,93,.22);
-      border-radius: 4px; display: flex; align-items: center; justify-content: center;
-    }
-    .col-phase { font-size: 9.5px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #b3975d; display: block; margin-bottom: 3px; }
-    .col-title { font-size: 14.5px; font-weight: 800; color: #fff; line-height: 1.25; display: block; }
-
-    .pain-list { padding: 4px 0 16px; }
-
-    .pain-item {
-      display: flex; align-items: baseline; gap: 11px;
-      padding: 11px 24px;
-      border-bottom: 1px solid rgba(255,255,255,.045);
-      transition: background .18s;
-    }
-    .pain-item:last-child { border-bottom: none; }
-    .pain-item:hover { background: rgba(255,255,255,.04); }
-
-    .pain-dot {
-      width: 4px; height: 4px; border-radius: 50%;
-      background: #b3975d; opacity: .45; flex-shrink: 0;
-      position: relative; top: 4px;
-    }
-
-    .pain-text { font-size: 12.5px; font-weight: 400; color: rgba(255,255,255,.56); line-height: 1.58; }
-    .pain-text strong { font-weight: 700; color: rgba(255,255,255,.82); }
-
-    .pivot {
-      margin-top: 56px;
-      padding: 36px 40px;
-      border: 1px solid rgba(179,151,93,.2);
-      background: rgba(179,151,93,.04);
-      display: flex; align-items: center; justify-content: space-between; gap: 32px;
-    }
-    .pivot-left { display: flex; flex-direction: column; gap: 10px; }
-    .pivot-quote {
-      font-size: clamp(15px, 1.7vw, 19px); font-weight: 700;
-      color: #fff; line-height: 1.45;
-    }
-    .pivot-body {
-      font-size: 13px; color: rgba(255,255,255,.46);
-      line-height: 1.72; max-width: 580px;
-    }
-    .pivot-cta {
-      flex-shrink: 0;
-      display: inline-flex; align-items: center; gap: 10px;
-      background: #b3975d; color: #152543;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 11px; font-weight: 700;
-      letter-spacing: .1em; text-transform: uppercase;
-      padding: 14px 24px; text-decoration: none; white-space: nowrap;
-      transition: background .18s;
-    }
-    .pivot-cta:hover { background: #c9aa70; }
-
-    @media (max-width: 760px) {
-      .cols { grid-template-columns: 1fr; }
-      .col { border-right: none; border-bottom: 1px solid rgba(179,151,93,.2); }
-      .col:last-child { border-bottom: none; }
-      .col-photo { height: 200px; }
-      .pivot { flex-direction: column; align-items: flex-start; padding: 28px 24px; }
-      .pain { padding: 60px 20px 56px; }
-    }
