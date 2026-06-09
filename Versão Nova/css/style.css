@@ -284,11 +284,6 @@
     .nav-hamburger.open span:nth-child(2) { opacity: 0; }
     .nav-hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-    /* GALERIA */
-    .galeria-section { padding: 0; background: #000; }
-    .galeria-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
-    .galeria-item { position: relative; overflow: hidden; height: 380px; }
-
     /* RESPONSIVE */
     @media (max-width: 768px) {
       nav { padding: 0 20px; }
@@ -316,8 +311,6 @@
       .produtos-grid, .modalidades-grid { grid-template-columns: 1fr; }
       .razoes { grid-template-columns: 1fr; }
       .photo-grid { grid-template-columns: 1fr; }
-      .galeria-grid { grid-template-columns: 1fr; }
-      .galeria-item { height: 280px; }
       footer { flex-direction: column; gap: 12px; text-align: center; }
     }
 
