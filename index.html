@@ -234,6 +234,50 @@
   </div>
 </section>
 
+<!-- GALERIA DE AMBIENTES -->
+<style>
+  .galeria-section { padding: 0 !important; background: #000 !important; }
+  .galeria-grid { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 3px !important; }
+  .galeria-item { position: relative !important; overflow: hidden !important; height: 380px !important; }
+  @media (max-width: 768px) {
+    .galeria-grid { grid-template-columns: 1fr !important; }
+    .galeria-item { height: 280px !important; }
+  }
+</style>
+<section class="galeria-section">
+  <div class="galeria-grid">
+    <div class="galeria-item" style="position:relative;overflow:hidden;height:380px;">
+      <img src="assets/images/Imagem-galeria-sprint.jpeg" alt="Varanda com tijolinho"
+        style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s;"
+        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 24px;background:linear-gradient(transparent,rgba(21,37,67,.75));">
+        <p style="margin:0;font-size:13px;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.08em;text-transform:uppercase;">Fachada</p>
+        <p style="margin:4px 0 0;font-size:16px;font-weight:800;color:#fff;">Sprint · Médio Padrão</p>
+      </div>
+    </div>
+
+    <div class="galeria-item" style="position:relative;overflow:hidden;height:380px;">
+      <img src="assets/images/imagem-galeria-altitude.jpeg" alt="Jardim interno com pedras"
+        style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s;"
+        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 24px;background:linear-gradient(transparent,rgba(21,37,67,.75));">
+        <p style="margin:0;font-size:13px;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.08em;text-transform:uppercase;">Fachada</p>
+        <p style="margin:4px 0 0;font-size:16px;font-weight:800;color:#fff;">Altitude · Alto Padrão</p>
+      </div>
+    </div>
+
+    <div class="galeria-item" style="position:relative;overflow:hidden;height:380px;">
+      <img src="assets/images/imagem-galeria-signature.jpeg" alt="Pátio interno alto padrão"
+        style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .5s;"
+        onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
+      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px 24px;background:linear-gradient(transparent,rgba(21,37,67,.75));">
+        <p style="margin:0;font-size:13px;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.08em;text-transform:uppercase;">Área externa</p>
+        <p style="margin:4px 0 0;font-size:16px;font-weight:800;color:#fff;">Signature · Alto Padrão Exclusivo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="faq" id="faq">
   <div class="container">
