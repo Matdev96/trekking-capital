@@ -91,63 +91,20 @@
       </div>
     </div>
 
-    <!-- GRÁFICO INTERATIVO DE RETORNOS -->
+    <!-- GRÁFICO DE RETORNO ANUAL -->
     <div class="comp-retorno-wrap">
-      <p class="section-tag" style="margin-top: 64px;">30 anos de dados</p>
-      <h3 class="comp-retorno-title">Retorno total do imóvel vs. outros investimentos</h3>
-      <p class="comp-retorno-sub">Valorização acumulada de R$ 100 mil investidos em 1994 — considerando valorização do ativo + renda de aluguel para o imóvel.</p>
+      <h3 class="comp-retorno-title" style="margin-top:64px;">Onde o seu capital rende mais.</h3>
+      <p class="comp-retorno-sub">Retorno anual por tipo de investimento, em % ao ano.</p>
 
-      <div style="background:rgba(179,151,93,.07);border-radius:6px;padding:10px 16px;margin-bottom:1.5rem;font-size:12px;color:var(--light-text);border-left:3px solid var(--gold);line-height:1.6;">
-        <strong style="color:var(--blue);">Fontes:</strong> Valorização imobiliária — FIPE-ZAP (2009–2024) · Yield de aluguel — FIPE-ZAP / FGV IBRE (~5,5% a.a. histórico) · Ibovespa — B3 · CDI e Poupança — Banco Central do Brasil
+      <div style="position:relative;width:100%;height:400px;margin-top:32px;">
+        <canvas id="gcSite" role="img" aria-label="Gráfico de barras comparando retorno anual: Poupança 7%, CDB líq. IR 12,2%, Tesouro Selic 14,4%, Ibovespa 13%, Construção de imóveis 30%."></canvas>
       </div>
 
-      <div style="display:flex;flex-wrap:wrap;gap:18px;margin-bottom:1.5rem;font-size:15px;font-weight:600;color:var(--blue);">
-        <span style="display:flex;align-items:center;gap:6px;"><span style="width:24px;height:3px;background:#152543;display:inline-block;border-top:3px dashed #152543;height:0;"></span> Projeção metodologia</span>
-        <span style="display:flex;align-items:center;gap:6px;"><span style="width:24px;height:3px;background:#b3975d;border-radius:2px;display:inline-block;"></span> Imóvel (val. + aluguel)</span>
-        <span style="display:flex;align-items:center;gap:6px;"><span style="width:24px;height:0;border-top:2px dashed #D85A30;display:inline-block;"></span> Ibovespa</span>
-        <span style="display:flex;align-items:center;gap:6px;"><span style="width:24px;height:0;border-top:2px dashed #378ADD;display:inline-block;"></span> CDI bruto</span>
-        <span style="display:flex;align-items:center;gap:6px;"><span style="width:24px;height:0;border-top:2px dashed #639922;display:inline-block;"></span> CDB líq. IR</span>
-        <span style="display:flex;align-items:center;gap:6px;"><span style="width:24px;height:0;border-top:2px solid #B4B2A9;display:inline-block;"></span> Poupança</span>
-      </div>
-
-      <div style="position:relative;width:100%;height:380px;">
-        <canvas id="gcSite" role="img" aria-label="Gráfico de retorno acumulado 1994-2024 mostrando imóvel com valorização e aluguel superando CDI e poupança de forma estável, com projeção da metodologia em crescimento expressivo.">Retorno total imobiliário vs Ibovespa, CDI, CDB e Poupança — 1994 a 2024.</canvas>
-      </div>
-
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin-top:1.25rem;">
-        <div style="background:var(--white);border-radius:6px;padding:.7rem 1rem;border-left:3px solid #152543;border:1px solid #eee;border-left:3px solid #152543;">
-          <p style="font-size:12px;color:var(--light-text);margin:0 0 6px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;">Proj. metodologia</p>
-          <p style="font-size:20px;font-weight:800;margin:0;color:#152543;" id="s-trek">—</p>
-        </div>
-        <div style="background:var(--white);border-radius:6px;padding:.7rem 1rem;border:1px solid #eee;border-left:3px solid #b3975d;">
-          <p style="font-size:12px;color:var(--light-text);margin:0 0 6px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;">Imóvel total</p>
-          <p style="font-size:20px;font-weight:800;margin:0;color:#b3975d;" id="s-imovel">—</p>
-        </div>
-        <div style="background:var(--white);border-radius:6px;padding:.7rem 1rem;border:1px solid #eee;border-left:3px solid #D85A30;">
-          <p style="font-size:12px;color:var(--light-text);margin:0 0 6px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;">Ibovespa</p>
-          <p style="font-size:20px;font-weight:800;margin:0;" id="s-bov">—</p>
-        </div>
-        <div style="background:var(--white);border-radius:6px;padding:.7rem 1rem;border:1px solid #eee;border-left:3px solid #378ADD;">
-          <p style="font-size:12px;color:var(--light-text);margin:0 0 6px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;">CDI bruto</p>
-          <p style="font-size:20px;font-weight:800;margin:0;" id="s-cdi">—</p>
-        </div>
-        <div style="background:var(--white);border-radius:6px;padding:.7rem 1rem;border:1px solid #eee;border-left:3px solid #639922;">
-          <p style="font-size:12px;color:var(--light-text);margin:0 0 6px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;">CDB líq. IR</p>
-          <p style="font-size:20px;font-weight:800;margin:0;" id="s-cdb">—</p>
-        </div>
-        <div style="background:var(--white);border-radius:6px;padding:.7rem 1rem;border:1px solid #eee;border-left:3px solid #B4B2A9;">
-          <p style="font-size:12px;color:var(--light-text);margin:0 0 6px;text-transform:uppercase;letter-spacing:.05em;font-weight:700;">Poupança</p>
-          <p style="font-size:20px;font-weight:800;margin:0;" id="s-poup">—</p>
-        </div>
-      </div>
-
-      <div style="margin-top:1.25rem;padding:12px 16px;border-radius:6px;border:1px solid #eee;background:#fafaf8;">
-        <p style="font-size:11px;color:#999;margin:0;line-height:1.7;">
-          <strong style="color:var(--light-text);">Notas metodológicas.</strong>
-          Imóvel (valorização + aluguel): valorização baseada em dados FIPE-ZAP 2009–2024 e estimativa histórica pré-2009; yield de aluguel estimado em 5,5% a.a. sobre o valor do ativo, em linha com a série histórica FIPE-ZAP/FGV IBRE. Ibovespa: variação anual nominal oficial B3. CDI e Poupança: séries históricas Banco Central do Brasil. CDB: CDI bruto com desconto de IR de 15% (alíquota para aplicações acima de 2 anos).
-          A <strong style="color:var(--light-text);">projeção da metodologia</strong> considera taxa de 30% a.a. — resultado histórico médio estimado de operações de construção e venda com alavancagem financeira, ciclos curtos de obra e estratégia comercial estruturada. Rentabilidades históricas não garantem resultados futuros. A projeção é uma estimativa referencial e não constitui promessa ou garantia de retorno. Resultados reais dependem de variáveis de mercado, execução e perfil de cada operação.
-        </p>
-      </div>
+      <p style="font-size:11px;color:#999;margin-top:20px;line-height:1.7;">
+        Renda fixa: referências de mercado em junho de 2026 (Selic 14,5%, CDI 14,4% ao ano). CDB líquido de IR a 100% do CDI. Poupança pela regra atual.
+        Ibovespa: média nominal de longo prazo, sujeita à volatilidade. 30% ao ano é a média que um construtor experiente alcança na construção e venda de imóveis,
+        e não representa promessa de rentabilidade.
+      </p>
     </div>
 
   </div>
@@ -396,6 +353,7 @@
 </a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
 <script src="js/grafico.js"></script>
 <script src="js/faq.js"></script>
 </body>
