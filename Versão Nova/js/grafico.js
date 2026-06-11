@@ -1,4 +1,5 @@
 (function () {
+  console.log('grafico.js v2 (gráfico de barras) carregado');
   const ctx = document.getElementById('gcSite');
   if (!ctx) return;
 

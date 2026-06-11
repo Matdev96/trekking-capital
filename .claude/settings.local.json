@@ -6,7 +6,16 @@
       "mcp__claude_ai_Notion__notion-update-page",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "WebFetch(domain:trekkingcapital.com.br)",
+      "Bash(ls assets/)",
+      "Bash(dir)",
+      "Bash(Get-ChildItem \"c:\\\\Users\\\\LENOVO\\\\Desktop\\\\Sites de Serviços\\\\trekking-capital\\\\Versão Nova\" -Recurse)",
+      "Bash(Select-Object FullName, Length)",
+      "Bash(find \"/mnt/c/Users/LENOVO/Desktop/Sites de Serviços/trekking-capital/Versão Nova\" -type f | sort)",
+      "Read(//mnt/c/Users/LENOVO/Desktop/Sites de Serviços/trekking-capital/**)",
+      "Bash(tail -c 4000 \"C:\\\\Users\\\\LENOVO\\\\.claude\\\\projects\\\\c--Users-LENOVO-Desktop-Sites-de-Servi-os-trekking-capital\\\\4606ed28-577e-4447-aea9-5147870cf627.jsonl\")",
+      "Read(//c/Users/LENOVO/.claude/projects/c--Users-LENOVO-Desktop-Sites-de-Servi-os-trekking-capital/**)"
     ]
   }
 }
